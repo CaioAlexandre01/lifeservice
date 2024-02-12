@@ -10,11 +10,13 @@
 html{
   scroll-behavior:smooth;
 }
+
 body, footer {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   display: flex;
   justify-content: center;
@@ -37,7 +39,7 @@ header {
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  height: 10vh;
+  height: 8vh;
   background: linear-gradient(to right, #475e29 10%, #555244);
 }
 
@@ -52,6 +54,59 @@ strong{
   font-size: 20px;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  transition: 300ms ease;
+  margin: 10px 0px 10px 0px;
+}
+
+.social-icons i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 300ms ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.social-icons i:hover {
+  cursor: pointer;
+  transition: 300ms ease;
+  transform: scale(1.15);
+}
+.social-icons div:hover {
+  cursor: pointer;
+  transition: 300ms ease;
+}
+
+.zap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 3px 0px 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 10%;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: transparent;
+  transition: 300ms ease;
+}
+
+.zap:hover {
+  border: 1px solid #0b6e24;
+  transition: 2s ease;
+  background: linear-gradient(to right, #0b6e24 10%, #1b9c10);
+}
+
+.zap span {
+  font-size: 16px;
+  margin-left: 6px;
+  color: #fff;
+  font-weight: 600;
+}
+
 #home {
   display: flex;
   justify-content: start;
@@ -64,8 +119,8 @@ strong{
 }
 
 .section-home-background{
-  height: 30vh;
-  width: 35vw;
+  height: 28vh;
+  width: 38vw;
   margin-left: 100px;
   margin-bottom: 20px;
 }
@@ -120,61 +175,10 @@ section img {
 }
 
 .container-icons {
-  padding: 10px 0px;
   width: 70%;
 }
 
-.social-icons {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  width: 100%;
-  gap: 10px;
-  transition: 300ms ease;
-}
 
-.social-icons i {
-  font-size: 20px;
-  cursor: pointer;
-  transition: 300ms ease;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.social-icons i:hover {
-  cursor: pointer;
-  transition: 300ms ease;
-  transform: scale(1.15);
-}
-.social-icons div:hover {
-  cursor: pointer;
-  transition: 300ms ease;
-}
-
-.zap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  width: 9%;
-  border-radius: 20px;
-  border: 1px solid #fff;
-  background: transparent;
-  transition: 300ms ease;
-}
-
-.zap:hover {
-  border: 1px solid #0b6e24;
-  transition: 2s ease;
-  background: linear-gradient(to right, #0b6e24 10%, #1b9c10);
-}
-
-.zap span {
-  font-size: 16px;
-  margin-left: 6px;
-  color: #fff;
-  font-weight: 600;
-}
 
 .bloco-logo {
   display: flex;
@@ -316,7 +320,7 @@ section img {
 }
 
 #servicos{
-  height: 130vh;
+  height: 140vh;
 
 }
 
@@ -335,13 +339,24 @@ section img {
   color: #555244;
 }
 
+#section-banner{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+#quemsomos{
+  height: 120vh;
+}
+
 .section-quemsomos{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 90%;
   height: 100vh;
-  padding: 40px 0px 0px 0px;
 }
 
 .container-desc-img{
@@ -413,12 +428,12 @@ hr{
 
 .container-footer{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
   align-items: center;
   width: 100vw;
   height: 15vh;
   background-color: #555244;
-
 }
 
 
@@ -427,23 +442,22 @@ hr{
   flex-direction: column;
   padding: 30px;
   width: 25%;
-  border: 1px solid #fff;
 }
 
 .container-copyright-footer{
   display: flex;
   flex-direction: column;
   padding: 30px;
-  width: 25%;
-  border: 1px solid #fff;
+  width: 30%;
   color: #fff;
+  font-size: 1rem;
 }
 
 .logo-footer{
   letter-spacing: 3px;
   font-weight: 900;
   color: #fff;
-  font-size: 35px;
+  font-size: 2rem;
 }
 
 .copyright{
@@ -456,7 +470,12 @@ hr{
   flex-direction: column;
   padding: 30px;
   width: 25%;
-  border: 1px solid #fff;
   color: #fff;
   font-weight: 600;
+}
+
+.container-social-icons{
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.4rem;
 }
