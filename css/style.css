@@ -112,11 +112,13 @@ main {
   background-image: url("/img/clean.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .section-home-background{
+  border: 4px solid blue;
   height: 28vh;
-  width: 38vw;
+  width: 50rem;
   margin-left: 100px;
   margin-bottom: 20px;
 }
@@ -150,7 +152,7 @@ main {
   font-weight: 600;
   font-size: 17px;
   color: #555244;
-  width: 130px;
+  width: 10rem;
   padding: 10px 0px;
   margin-left: 100px;
   background-color: #fff;
@@ -188,8 +190,8 @@ section img {
 .logo {
   padding-bottom: 3px;
   margin-left: 50px;
-  width: 8em;
-  height: 4em;
+  width: 8rem;
+  height: 4rem;
 }
 
 .container-links {
@@ -230,7 +232,7 @@ section img {
   flex-direction: column;
   justify-self: center;
   margin-top: 50px;
-  width: 350px;
+  width: 21.9rem;
   height: 500px;
   background-color:rgb(255, 255, 255);
   border-radius: 8px;
