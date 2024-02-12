@@ -50,10 +50,6 @@ main {
   flex-direction: column;
 }
 
-strong{
-  font-size: 20px;
-}
-
 .social-icons {
   display: flex;
   justify-content: end;
@@ -87,7 +83,7 @@ strong{
   align-items: center;
   padding: 3px 3px 0px 3px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  width: 10%;
+  width: 8rem;
   border-radius: 20px;
   border: 1px solid #fff;
   background: transparent;
@@ -478,4 +474,8 @@ hr{
   display: flex;
   gap: 1rem;
   margin-top: 0.4rem;
+}
+
+@media screen and (min-width: 768px) {
+
 }
