@@ -1,5 +1,6 @@
 window.sr = ScrollReveal({ reset: true });
 
+sr.reveal('.span-2', {duration: 1000});
 sr.reveal('.blocoDois', {duration: 1000});
 sr.reveal('.blocos', {duration: 1000});
 sr.reveal('.banner', {duration: 1500});
@@ -39,3 +40,21 @@ typeWriter(titulo);
         // Rola para o topo da página
         window.scrollTo(0, 0);
     });
+
+// Função para mostrar ou ocultar o botão "Voltar para o Topo" conforme a posição da rolagem
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  var btnTopo = document.getElementById("btnTopo");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    btnTopo.style.display = "block";
+  } else {
+    btnTopo.style.display = "none";
+  }
+}
+
+// Função para rolar suavemente para o topo da página quando o botão é clicado
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
