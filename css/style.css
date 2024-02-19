@@ -9,12 +9,7 @@
 
 html{
   scroll-behavior:smooth;
-}
-
-body, footer {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  width: 100vw;
 }
 
 body {
@@ -41,6 +36,7 @@ header {
   width: 100vw;
   height: 8vh;
   background: linear-gradient(to right, #475e29 10%, #555244);
+  z-index: 999;
 }
 
 main {
@@ -48,6 +44,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #F0F0F1;
 }
 
 .social-icons {
@@ -233,26 +230,33 @@ section img {
   margin-top: 50px;
   width: 21.9rem;
   height: 500px;
-  background-color:rgb(255, 255, 255);
+  background-color: #F0F0F1;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: 500ms ease;
 }
 
+.card:hover {
+  transform: scale(1.03);
+  transition: 300ms ease;
+  z-index: 1;
+}
 
 .card-img img {
   width: 350px;
   height: 250px;
   border-radius: 0px 0px 170px 0px;
+  border: 1px solid #fff;
 }
 
 .card-span-title{
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
-  color: #555244;
+  color: #555343;
 }
 
 .card-span-subtitle{
@@ -261,10 +265,12 @@ section img {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 18px;
+  font-family: "lato",sans-serif;
+  font-size: 16px;
   font-weight: 400;
-  color: #555244;
+  color: #555343;
   padding: 10px;
+
 }
 
 .container-blocos {
@@ -274,18 +280,20 @@ section img {
   display: flex;
   justify-content: center;
   width: 100%;
+  z-index: 999; /* Adicionando um z-index maior */
 }
 
 .blocos {
   background-color: #475e29;
   width: 450px;
-  z-index: 3; /* Defina um z-index maior do que o do .carrossel para garantir que .local esteja acima dele */
+  z-index: 2;
   position: relative;
 }
+
 .blocoDois {
   background-color: #555244;
   width: 450px;
-  z-index: 3; /* Defina um z-index maior do que o do .carrossel para garantir que .local esteja acima dele */
+  z-index: 2;
   position: relative;
 }
 
@@ -318,7 +326,6 @@ section img {
 
 #servicos{
   height: 140vh;
-
 }
 
 #quemsomos{
@@ -345,7 +352,7 @@ section img {
 }
 
 #quemsomos{
-  height: 120vh;
+  height: 110vh;
 }
 
 .section-quemsomos{
@@ -403,7 +410,7 @@ section img {
 .box-2{
   display: flex;
   width: 40%;
-  height: 800px;
+  height: 750px;
 }
 
 hr{
@@ -477,6 +484,9 @@ hr{
   margin-top: 0.4rem;
 }
 
-@media screen and (min-width: 768px) {
-
+@media screen and (max-width: 768px) {
+  .container-cards{
+    display: flex;
+    flex-direction: column;
+  }
 }
