@@ -177,7 +177,7 @@ section img {
 
 .bloco-logo {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   background-color: rgb(255, 255, 255);
   width: 70vw;
   box-shadow: 3px 3px 10px;
