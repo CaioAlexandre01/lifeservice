@@ -26,7 +26,7 @@ function typeWriter(elemento) {
         if (i >= texto.length) {
             clearInterval(interval);
         }
-    }, 40);
+    }, 30);
 }
 
 // Seleciona o elemento desejado
@@ -57,4 +57,11 @@ function scrollFunction() {
 function scrollToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+function openNav(){
+  document.querySelector('.overlay').style.width = '100%'
+}
+function closeNav(){
+  document.querySelector('.overlay').style.width = '0%'
 }
