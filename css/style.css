@@ -35,7 +35,7 @@ header {
   width: 100%;
   height: 8vh;
   background: linear-gradient(to right, #475e29 10%, #555244);
-  z-index: 999;
+  z-index: 998;
 }
 
 main {
@@ -177,7 +177,7 @@ section img {
 
 .bloco-logo {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   background-color: rgb(255, 255, 255);
   width: 70vw;
   box-shadow: 3px 3px 10px;
@@ -495,6 +495,12 @@ hr{
   margin-top: 0.4rem;
 }
 
+
+
+
+
+
+
 @media screen and (max-width: 800px) {
 /* HEADER */
   .social-icons{
@@ -515,6 +521,7 @@ hr{
     display: flex;
     justify-content: end;
     height: 50vh;
+    
   }
 
   .section-home-background{
@@ -524,6 +531,7 @@ hr{
     margin-left: 20px;
     border-radius: 10px;
     backdrop-filter: blur(20px);
+    text-align: center;
   }
   
   .span-1, .span-2{
@@ -555,23 +563,26 @@ hr{
   }
 
   #servicos{
-    height: 430vh;
+    height: 330vh;
   }
 
   #section-banner{
     display: none;
+    height: 0;
   }
 
   .container-desc-img{
     flex-direction: column;
+    height: 750px;
   }
+
 
   .desc-mobile{
     width: 100%;
   }
 
   #quemsomos{
-    height: 240vh;
+    height: 100vh;
   }
 
   .box-1{
@@ -584,7 +595,9 @@ hr{
   }
 
   .container-footer{
-    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: auto;
     gap: 0;
   }
@@ -596,8 +609,6 @@ hr{
   }
 
   .msg-importante{
-    display: flex;
-    justify-content: start;
     width: 100%;
   }
 }
