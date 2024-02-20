@@ -515,10 +515,17 @@ hr{
 
 @media screen and (max-width: 800px) {
 /* HEADER */
+
+  .container-icons{
+    display: none;
+  }
   .social-icons{
     justify-content: center;
   }
 
+  .logo{
+    margin: 0px 0px 0px 20px;
+  }
   .bloco-logo{
     width: 100vw;
     justify-content: space-between;
@@ -548,19 +555,20 @@ hr{
 
   .mobile-links{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
     list-style: none;
     flex-direction: column;
     width: 100vw;
-    height: 70vh;
+    margin-top: 80px;
     gap: 30px;
     color:antiquewhite;
-    font-size: 40px;
+    font-size: 25px;
+    padding-left: 15px;
+    font-weight: 600;
   }
 
   .close{
-    margin: 65px 30px;
+    margin: 15px 15px;
     font-size: 30px;
     color:antiquewhite;
   }
@@ -574,12 +582,17 @@ hr{
   }
 
   .section-home-background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 90vw;
     margin: 0;
-    height: 120px;
+    height: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgb(131, 131, 131);
     margin-left: 20px;
-    border-radius: 10px;
-    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
   }
   
   .span-1, .span-2{
@@ -587,7 +600,18 @@ hr{
   }
 
   .btn-contato{
-    display: none;
+    border: 1px solid #fff;
+    color:#555244;
+    background-color: antiquewhite;
+    opacity: 0.8;
+    margin: 50px 0px 0px 0px;
+    display: flex;
+  }
+
+  .container-btn-contato{
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   .card{
@@ -607,7 +631,7 @@ hr{
   }
 
   .section-cabecalho{
-    padding-top: 50px;
+    padding-top: 100px;
   }
 
   #servicos{
@@ -619,7 +643,7 @@ hr{
   }
 
   .container-desc-img{
-    height: 75%;
+    height: 80%;
     flex-direction: column;
   }
 
@@ -636,7 +660,7 @@ hr{
   }
 
   #quemsomos{
-    height: 170vh;
+    height: 150vh;
   }
 
   .box-1{
