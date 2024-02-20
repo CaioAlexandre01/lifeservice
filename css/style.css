@@ -382,8 +382,6 @@ section img {
   justify-content: center;
   align-items: center;
   width: 60%;
-  height: 600px;
-  
 }
 
 .msg-importante{
@@ -404,10 +402,6 @@ section img {
   display: flex;
   flex-direction: column;
   width: 60%;
-}
-
-.container-descricao h1{
-  font-size: 30px;
 }
 
 .box-2{
@@ -495,6 +489,23 @@ hr{
   margin-top: 0.4rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 800px) {
 /* HEADER */
   .social-icons{
@@ -555,7 +566,7 @@ hr{
   }
 
   #servicos{
-    height: 360vh;
+    height: 400vh;
   }
 
   #section-banner{
@@ -567,12 +578,14 @@ hr{
     flex-direction: column;
   }
 
-  .desc-mobile{
-    width: 100%;
+  .container-descricao{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
   }
 
   #quemsomos{
-    height: 130vh;
+    height: 170vh;
     
   }
 
