@@ -27,8 +27,10 @@
                 </div>
             </div>
         </div>
+
         <div class="bloco-logo">
             <img class="logo" src="img/logo.png" alt="">
+            <i onclick="openNav()" class="fa-solid fa-bars menu" onclick="openNav()"></i>
             <div class="container-links">
                 <nav>
                     <ul>
@@ -42,9 +44,18 @@
     </header>
     
     <main>
-
         <section id="home">
             <div class="container-home">
+                <div class="overlay">
+                    <i onclick="closeNav()" class="fa-solid fa-x close"></i>
+                    <nav>
+                        <ul class="mobile-links">
+                            <li><a onclick="closeNav()" href="#home">HOME</a></li>
+                            <li><a onclick="closeNav()" href="#servicos">SERVIÇOS</a></li>
+                            <li><a onclick="closeNav()" href="#quemsomos">QUEM SOMOS</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="section-home-background">
                     <span class="span-1">Life Service,</span>
                     <span class="span-2 typing">
@@ -57,7 +68,7 @@
                     CONTATO
                 </a>
             </div>
-
+            
             <div class="container-blocos">
                 <div class="blocos" style="display: flex; flex-direction: column;">
                     <div>
@@ -93,8 +104,8 @@
                 </div>
             </div>
         </section>
-
-
+        
+        
         <section id="servicos" class="section-servicos">
             <div class="section-cabecalho">
                 <hr>
