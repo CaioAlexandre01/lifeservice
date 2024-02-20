@@ -555,7 +555,7 @@ hr{
   }
 
   #servicos{
-    height: 430vh;
+    height: 360vh;
   }
 
   #section-banner{
@@ -563,6 +563,7 @@ hr{
   }
 
   .container-desc-img{
+    height: 100%;
     flex-direction: column;
   }
 
@@ -571,7 +572,8 @@ hr{
   }
 
   #quemsomos{
-    height: 240vh;
+    height: 130vh;
+    
   }
 
   .box-1{
@@ -586,7 +588,7 @@ hr{
   .container-footer{
     flex-direction: column;
     height: auto;
-    gap: 0;
+    margin-top: 100px;
   }
 
   .container-logo-footer,
