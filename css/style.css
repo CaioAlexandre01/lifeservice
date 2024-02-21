@@ -550,7 +550,7 @@ hr{
     position: fixed;
     top: 0;
     right: 0;
-    width: 60%;
+    width: 0%;
     height: 100%;
     z-index: 9999; /* Garante que a div esteja acima de todos os outros elementos */
     transition: all 500ms;
@@ -574,6 +574,15 @@ hr{
     padding: 30px;
     border-bottom: 2px solid #777777;
     font-size: 25px;
+    
+  }
+
+  .social-icons-menu-mobile a{
+    transition: 500ms ease-in-out;
+  }
+  .social-icons-menu-mobile a:hover{
+    transform: scale(1.1);
+    transition: 500ms ease-in-out;
   }
 
   .mobile-links{
@@ -588,23 +597,6 @@ hr{
     font-size: 25px;
     padding-left: 15px;
     font-weight: 600;
-  }
-
-  .container-logo-menu-mobile{
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    width: 100%;
-    height: 40%;
-  }
-
-  .logo-menu-mobile{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background:#fff;
-    width: 100%;
-    height: 20%;
   }
 
   .overlay .close{
@@ -676,7 +668,7 @@ hr{
   }
 
   #servicos{
-    height: 430vh;
+    height: 460vh;
   }
 
   #section-banner{
