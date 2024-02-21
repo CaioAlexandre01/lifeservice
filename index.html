@@ -36,6 +36,7 @@
                     <ul>
                         <li><a href="#home">HOME</a></li>
                         <li><a href="#servicos">SERVIÇOS</a></li>
+                        <li><a href="#trabalheconosco">TRABALHE CONOSCO</a></li>
                         <li><a href="#quemsomos">QUEM SOMOS</a></li>
                     </ul>
                 </nav>
@@ -67,6 +68,7 @@
                         <ul class="mobile-links">
                             <li><a onclick="closeNav()" href="#home">HOME</a></li>
                             <li><a onclick="closeNav()" href="#servicos">SERVIÇOS</a></li>
+                            <li><a onclick="closeNav()" href="#trabalheconosco">TRABALHE<br>CONOSCO</a></li>
                             <li><a onclick="closeNav()" href="#quemsomos">QUEM SOMOS</a></li>
                         </ul>
                     </nav>
@@ -211,7 +213,32 @@
         <section id="section-banner">
             <img src="img/banner.png" class="banner" style="width: 80vw; height: 50vh;">
         </section>
-
+        <section id="trabalheconosco" class="section-container-form">
+            <div class="section-cabecalho">
+                <hr>
+                <span style="color: #ffffff;">TRABALHE<br>CONOSCO</span>
+                <hr>
+            </div>
+            <div class="container-form">
+                <span style="font-size: 20px; font-weight: 600;">Formulário</span>
+                <!-- <label for="">Nome:</label> -->
+                <input type="text" placeholder="Nome:" autocomplete="off">
+                <!-- <label for="">Email:</label> -->
+                <input type="email" placeholder="Email:" autocomplete="off">
+                <!-- <label for="">Telefone:</label> -->
+                <input type="tel" placeholder="Telefone:" autocomplete="off">
+                <select name="" id="">
+                    <option value="0" checked>SELECIONE CARGO PRETENDIDO</option>
+                    <option value="0">GARÇOM</option>
+                    <option value="0">AÇOUGUE</option>
+                    <option value="0">SERVIÇOS GERAIS</option>
+                    <option value="0">MANOBRISTA</option>
+                    <option value="0">BARMAN</option>
+                </select>
+                <textarea type="text" rows="4" cols="50" placeholder="Deixe sua mensagem aqui..."></textarea>
+                <button type="submit">ENVIAR</button>
+            </div>
+        </section>
         <section id="quemsomos" class="section-quemsomos">
 
             <div class="container-desc-img">
@@ -248,7 +275,7 @@
                 </div>
             </div>
         </section>
-
+        
         <footer class="container-footer">
             <div class="container-logo-footer">
                 <span class="logo-footer">LIFE SERVICE</span>
