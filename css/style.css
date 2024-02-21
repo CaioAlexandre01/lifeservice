@@ -498,6 +498,9 @@ hr{
   display: none;
 }
 
+.overlay .close{
+  display: none;
+}
 
 
 
@@ -547,11 +550,30 @@ hr{
     position: fixed;
     top: 0;
     right: 0;
-    width: 0%;
+    width: 60%;
     height: 100%;
     z-index: 9999; /* Garante que a div esteja acima de todos os outros elementos */
     transition: all 500ms;
-    background: linear-gradient(to right, rgba(71, 94, 41, 0.9) 10%, rgba(85, 82, 68, 0.8));
+    background: linear-gradient(to bottom, rgba(71, 94, 41, 1) 10%, rgba(85, 82, 68, 1));
+    overflow: hidden;
+  }
+
+  .title-menu-mobile{
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+    font-size: 25px;
+    width: 100%;
+    padding-top: 20PX;
+  }
+
+  .social-icons-menu-mobile{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 30px;
+    border-bottom: 2px solid #777777;
+    font-size: 25px;
   }
 
   .mobile-links{
@@ -568,10 +590,28 @@ hr{
     font-weight: 600;
   }
 
-  .close{
+  .container-logo-menu-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 40%;
+  }
+
+  .logo-menu-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#fff;
+    width: 100%;
+    height: 20%;
+  }
+
+  .overlay .close{
+    display: flex;
     margin: 15px 15px;
     font-size: 30px;
-    color:antiquewhite;
+    color: #fff;
   }
 
 /* MAIN */
@@ -636,7 +676,7 @@ hr{
   }
 
   #servicos{
-    height: 460vh;
+    height: 430vh;
   }
 
   #section-banner{
