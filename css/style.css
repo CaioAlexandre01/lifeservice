@@ -445,7 +445,7 @@ hr{
   margin-bottom: 2px;
 }
 
-.container-form{
+.form{
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -455,7 +455,6 @@ hr{
   gap: 20px;
   margin: 50px;
   padding: 20px;
-  
 }
 
 .container-form input{
@@ -568,6 +567,88 @@ hr{
   display: none;
 }
 
+.container-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 23rem;
+    height: 50%;
+    background: #F9F9F9;
+    gap: 20px;
+    margin: 50px;
+    padding: 20px;
+}
+
+.section-container-form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #475e29;
+  width: 100%;
+  height: auto;
+  padding-bottom: 70px;
+}
+
+.container-form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 23rem;
+  height: auto;
+  background: #F9F9F9;
+  gap: 20px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container-form input{
+  padding: 15px;
+  width: 100%;
+  height: 3rem;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.container-form select{
+  width: 100%;
+  height: 3rem;
+  border: 1px solid black;
+  background-color: #fff;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.container-form button{
+  border-radius: 10px;
+  width: 100%;
+  height: 3rem;
+  background:#555244;
+  color: #fff;
+  font-weight: 600;
+  transition: all 500ms;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 18;
+}
+
+.container-form button:hover{
+  cursor: pointer;
+  background: #0b6e24;
+  transition: all 300ms;
+}
+
+.container-form textarea{
+  width: 100%;
+  height: 4rem;
+  resize: none;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
 
 
 
