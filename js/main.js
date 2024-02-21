@@ -60,7 +60,7 @@ function scrollToTop() {
 }
 
 function openNav(){
-  document.querySelector('.overlay').style.width = '50%'
+  document.querySelector('.overlay').style.width = '60%'
 }
 function closeNav(){
   document.querySelector('.overlay').style.width = '0%'
