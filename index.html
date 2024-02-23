@@ -29,7 +29,9 @@
         </div>
 
         <div class="bloco-logo">
-            <img class="logo" src="img/logo.png" alt="">
+            <a href="index.html">
+                <img class="logo" src="img/logo.png" alt="">
+            </a>
             <i onclick="openNav()" class="fa-solid fa-bars menu" onclick="openNav()"></i>
             <div class="container-links">
                 <nav>
@@ -74,18 +76,23 @@
                     </nav>
 
                 </div>
-                <div class="section-home-background">
-                    <span class="span-1">Life Service,</span>
-                    <span class="span-2 typing">
-                        <br> transformando cada ambiente, 
-                        <br>tornando sua vida 
-                        <br>mais segura e mais leve!
-                    </span>
+                <div class="cotainer-secHomeBackground">
+                    <div class="section-home-background">
+                        <span class="span-1">Life Service,</span>
+                        <span class="span-2 typing">
+                            <br> transformando cada ambiente, 
+                            <br>tornando sua vida 
+                            <br>mais segura e mais leve!
+                        </span>
+                    </div>
                 </div>
                 <div class="container-btn-contato">
                     <a class="btn-contato" href="https://wa.me/5522999649567">
                         CONTATO
                     </a>
+                </div>
+                <div class="arrow">
+                    <i class="fa-solid fa-angles-down"></i>
                 </div>
             </div>
             
@@ -210,35 +217,61 @@
             </div>
         </section>
 
+
         <section id="section-banner">
             <img src="img/banner.png" class="banner" style="width: 80vw; height: 50vh;">
         </section>
+
+
+
+        <!-- SECTION-> TRABALHE CONOSCO -->
+
         <section id="trabalheconosco" class="section-container-form">
-            <div class="section-cabecalho">
-                <hr>
-                <span style="color: #ffffff;">TRABALHE<br>CONOSCO</span>
-                <hr>
+            <div class="box1-trabalheconosco">
+                <span style="font-size: 70px; color: #fff; font-weight: 600;">
+                    Trabalhe<br>conosco!
+                </span>
+                <span style="color: #fff; padding: 20px 0px 40px 0px;">
+                    Se preferir pode usar outro meio de contato:
+                </span>
+                <div style="display: flex; flex-direction: column;">
+                    <span>
+                        <i class="fa-solid fa-envelope" style="color: #ffffff; padding: 0px 10px 10px 0px"></i>
+                        <span style="color: #fff;">contato@lifeprestadora.com.br</span>
+                    </span>
+                    <span style="color: #ffffff; padding-right: 10px;">
+                        <i class="fa-solid fa-phone" style="color: #ffffff; padding-right: 10px;"></i>
+                        <span>(22) 2735-2371</span>
+                    </span>
+                </div>
             </div>
-            <div class="container-form">
-                <span style="font-size: 20px; font-weight: 600;">Formulário</span>
-                <!-- <label for="">Nome:</label> -->
-                <input type="text" placeholder="Nome:" autocomplete="off">
-                <!-- <label for="">Email:</label> -->
-                <input type="email" placeholder="Email:" autocomplete="off">
-                <!-- <label for="">Telefone:</label> -->
-                <input type="tel" placeholder="Telefone:" autocomplete="off">
-                <select name="" id="">
-                    <option value="0" checked>SELECIONE CARGO PRETENDIDO</option>
-                    <option value="0">GARÇOM</option>
-                    <option value="0">AÇOUGUE</option>
-                    <option value="0">SERVIÇOS GERAIS</option>
-                    <option value="0">MANOBRISTA</option>
-                    <option value="0">BARMAN</option>
-                </select>
-                <textarea type="text" rows="4" cols="50" placeholder="Deixe sua mensagem aqui..."></textarea>
-                <button type="submit">ENVIAR</button>
+
+
+
+            <div class="box2-trabalheconosco">
+                <div class="container-form">
+                    <form method ="post" action="php/envia.php" class="form">
+                        <span style="font-size: 20px; font-weight: 600;">Formulário</span>
+                        <input type="text" placeholder="Nome:" autocomplete="off" id="nome" name="nome" required>
+                        <input type="email" placeholder="Email:" autocomplete="off" id="email" name="email" required>
+                        <input type="tel" placeholder="Telefone:" autocomplete="off" id="telefone" name="telefone" required>
+                        <select name="" id="">
+                            <option value="1" checked>SELECIONE CARGO PRETENDIDO</option>
+                            <option value="2">GARÇOM</option>
+                            <option value="3">AÇOUGUE</option>
+                            <option value="4">SERVIÇOS GERAIS</option>
+                            <option value="5">MANOBRISTA</option>
+                            <option value="6">BARMAN</option>
+                        </select>
+                        <textarea class="textarea" type="text" rows="4" cols="50" placeholder="Deixe sua mensagem aqui..."></textarea>
+                        <button class="btnEnviar" type="submit" value="Enviar">ENVIAR</button>
+                    </form>
+                </div>
             </div>
         </section>
+
+
+        
         <section id="quemsomos" class="section-quemsomos">
 
             <div class="container-desc-img">
