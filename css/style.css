@@ -203,8 +203,8 @@ section img {
 
 .container-links {
   display: flex;
-  justify-content: end;
-  margin-right: 6rem;
+  justify-content: space-around;
+  
   width: 100%;
   align-items: center;
 }
@@ -561,7 +561,7 @@ select{
   background: #475e29;
   width: 100%;
   height: auto;
-  padding: 120px 0px 150px 0px;
+  padding: 80px 0px 150px 0px;
 }
 
 .container-form{
