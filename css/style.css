@@ -353,12 +353,16 @@ section img {
 }
 
 #section-banner{
-  margin-top: 5%;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.banner{
+  width: 100%;
+}
 .section-quemsomos{
   display: flex;
   justify-content: center;
