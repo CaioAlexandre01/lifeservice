@@ -977,6 +977,7 @@ section{
   .box1-span2{
     display: flex;
     margin: 0;
+    width: 100%;
     padding: 10px 0px 0px 0px;
   }
 
