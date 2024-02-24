@@ -59,9 +59,29 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-function openNav(){
-  document.querySelector('.overlay').style.width = '60%'
+
+
+let overlay = document.querySelector('.overlay');
+
+function openNav() {
+  overlay.style.width = '60%';
 }
-function closeNav(){
-  document.querySelector('.overlay').style.width = '0%'
+
+function closeNav() {
+  overlay.style.width = '0%';
 }
+
+overlay.addEventListener('click', function(event) {
+  event.stopPropagation(); // Impede a propagação do evento para o documento
+});
+
+// Adiciona um event listener para detectar cliques no documento inteiro
+document.addEventListener('click', function(event) {
+  const isClickInsideMenu = event.target.closest('.overlay') !== null;
+  const isClickOnMenuIcon = event.target.classList.contains('menu');
+  
+  // Verifica se o clique não ocorreu dentro do overlay ou no ícone do menu
+  if (!isClickInsideMenu && !isClickOnMenuIcon) {
+    closeNav();
+  }
+});
