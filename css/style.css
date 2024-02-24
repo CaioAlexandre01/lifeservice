@@ -107,7 +107,7 @@ section{
 
 #home {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
@@ -610,12 +610,11 @@ select{
   padding: 10px;
 }
 
-#trabalheconosco{
-  display: flex;
-}
+
 
 .box1-trabalheconosco{
   display: flex;
+  gap: 15px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -627,9 +626,14 @@ select{
 }
 
 .box1-span1{
-  font-size: 70px; 
+  font-size: 70px;
+  padding-bottom: 10px;
   color: #fff; 
   font-weight: 600;
+}
+
+.box1-span2{
+  color: #fff; 
 }
 
 .box2-trabalheconosco{
@@ -641,9 +645,7 @@ select{
   height: auto;
 }
 
-.box1-span2{
-  color: #fff; padding: 20px 0px 40px 0px;
-}
+
 .arrow{
   display: none;
 }
@@ -703,7 +705,7 @@ section{
 #home{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
 }
   .container-icons{
     display: none;
@@ -805,8 +807,8 @@ section{
 
   .container-home{
     display: flex;
-    justify-content: end;
-    height: 90vh;
+    height: auto;
+    padding-bottom: 40px;
   }
 
   .section-home-background{
@@ -848,7 +850,7 @@ section{
     color: antiquewhite;
     width: 100%;
     font-size: 50px;
-    margin-top: 100px;
+    margin-top: 30px;
     padding-bottom: 20px;
     animation: arrowAnimation 1s infinite alternate; /* Added 'infinite' for continuous animation and 'alternate' for reversing */
 }
