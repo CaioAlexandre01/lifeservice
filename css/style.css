@@ -107,7 +107,7 @@ section{
 
 #home {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   width: 100vw;
   height: 100vh;
@@ -115,6 +115,7 @@ section{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
   overflow: hidden;
   margin: 0;
 }
@@ -353,15 +354,20 @@ section img {
 }
 
 #section-banner{
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("/img/banner.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  background-attachment: fixed;
 }
 
 .banner{
-  width: 100%;
+  width: 100vw;
 }
 .section-quemsomos{
   display: flex;
