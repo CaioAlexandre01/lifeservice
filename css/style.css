@@ -107,7 +107,7 @@ section{
 
 #home {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   width: 100vw;
   height: 100vh;
@@ -115,7 +115,7 @@ section{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  background-attachment: fixed;
+
   overflow: hidden;
   margin: 0;
 }
