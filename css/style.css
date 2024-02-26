@@ -115,7 +115,7 @@ section{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  background-attachment: fixed !important;
+  background-attachment: fixed;
   overflow: hidden;
   margin: 0;
 }
@@ -712,6 +712,7 @@ section{
   display: flex;
   justify-content: center;
   align-items: end;
+  background-attachment: inherit;
 }
   .container-icons{
     display: none;
