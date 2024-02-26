@@ -115,7 +115,7 @@ section{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-
+  background-attachment: fixed !important;
   overflow: hidden;
   margin: 0;
 }
@@ -828,7 +828,7 @@ section{
     border: 1px solid rgb(131, 131, 131);
     margin-left: 20px;
     border-radius: 20px;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px) !important;
   }
   
   .span-1, .span-2{
