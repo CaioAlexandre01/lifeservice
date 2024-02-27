@@ -190,13 +190,14 @@ section img {
   width: 70vw;
   height: auto;
   box-shadow: 3px 3px 10px;
+  padding-top: 5px;
 }
 
 .logo {
-  padding-bottom: 3px;
   margin-left: 50px;
-  width: 8rem;
-  height: 4rem;
+  width: 5rem;
+  height: 3.5rem;
+  transform: scale(1.2);
 }
 
 .bloco-logo i{
