@@ -723,10 +723,6 @@ section{
     justify-content: center;
   }
 
-  .logo{
-    margin: 0px 0px 0px 20px;
-  }
-
   .bloco-logo{
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
     background: #fff;
